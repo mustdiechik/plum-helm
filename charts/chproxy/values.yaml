@@ -107,3 +107,6 @@ config: |
       nodes: [ "clickhouse:8123"]
       users:
         - name: "default"
+
+# Array of extra objects to deploy with the release
+extraDeploy: []
