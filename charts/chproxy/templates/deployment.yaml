@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "chproxy.fullname" . }}
+  namespace: {{ .Release.Namespace }}
   labels:
     {{- include "chproxy.labels" . | nindent 4 }}
 spec:
